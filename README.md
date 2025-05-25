@@ -8,30 +8,30 @@ The healthcare Management System is a web-based application designed to allow us
 
 ## User Functionalities
 
-- *Register*: New users (patients) can create accounts.
-- *Login*: Access account details and manage profile information.
-- *Book Appointment*: Patients can book appointments with doctors for specific dates and times.
-- *View Medical History*: Patients can view their previous consultations and medical records.
+- **Register**: New users (patients) can create accounts.
+- **Login**: Access account details and manage profile information.
+- **Book Appointment**: Patients can book appointments with doctors for specific dates and times.
+- **View Medical History**: Patients can view their previous consultations and medical records.
 
 ## Doctor Functionalities
 
-- *Schedule Management*: Doctors can manage their availability and appointments.
-- *Patient Records*: View and update medical records of patients.
-- *Appointment Management*: Confirm and manage appointments with patients.
+- **Schedule Management**: Doctors can manage their availability and appointments.
+- **Patient Records**: View and update medical records of patients.
+- **Appointment Management**: Confirm and manage appointments with patients.
 
 ## Admin Functionalities
 
-- *User Management*: Admin can manage user accounts for patients and doctors, including adding, editing, and deleting accounts.
-- *Appointment Oversight*: Admin can view and manage all system appointments.
-- *System Settings*: Configure system settings as needed, including roles and permissions.
-- *Security Features*: Data protection via encryption and access control.
+- **User Management**: Admin can manage user accounts for patients and doctors, including adding, editing, and deleting accounts.
+- **Appointment Oversight**: Admin can view and manage all system appointments.
+- **System Settings**: Configure system settings as needed, including roles and permissions.
+- **Security Features**: Data protection via encryption and access control.
 
 ## Technology Stack
 
-- *Backend*: Java, Spring Boot, JDBC
-- *Frontend*: HTML, CSS, JavaScript
-- *Database*: MySQL
-- *Tools & Libraries*: 
+- **Backend**: Java, Spring Boot, JDBC
+- **Frontend**: HTML, CSS, JavaScript
+- **Database**: MySQL
+- **Tools & Libraries**: 
   - Spring Security (for authentication and authorization)
   - JDBC (for database connectivity and operations)
 
@@ -39,26 +39,26 @@ The healthcare Management System is a web-based application designed to allow us
 
 To set up this project locally, you’ll need:
 
-- *Java Development Kit (JDK)*: Version 11 or later
-- *Maven*: For dependency management
-- *MySQL*: Database management system
-- *IDE*: Recommended IntelliJ IDEA or Eclipse
-- *Git*: For version control
+- **Java Development Kit (JDK)**: Version 11 or later
+- **Maven**: For dependency management
+- **MySQL**: Database management system
+- **IDE**: Recommended IntelliJ IDEA or Eclipse
+- **Git**: For version control
 
 ## Installation
 
 ### 1. Clone the Repository
 
-bash
-git clone https://github.com/Parthamesh06/HEALTH_CARE_MANAGEMENT.git
+'''bash
+git clone https://github.com/Ronit-raj98/HealthCare_guvi.git
 cd HEALTH_CARE_MANAGEMENT
-
+'''
 
 ### 2. Configure the Database 
 
-Create a new database in MySQL, then update your application.properties file to configure the database connection.
+Create a new database in MySQL, then update your 'application.properties' file to configure the database connection.
 
-properties
+'''properties
 # application.properties
 
 spring.application.name=HealthCare
@@ -75,32 +75,32 @@ spring.thymeleaf.suffix=.html
 spring.thymeleaf.cache=true
 
 server.port=8080
-
+'''
 
 
 ### 3. Build the Project
 
 Use Maven to install dependencies and build the project:
 
-bash
+'''bash
 mvn clean install
-
+'''
 
 ### 4. Run the Application
 
 Run the application using Maven:
 
-bash
+'''bash
 mvn spring-boot:run
-
+'''
 
 ### 5. Access the Application
 
-Open your browser and go to http://localhost:8080 to access the Online Banking Management System.
+Open your browser and go to 'http://localhost:8080' to access the Online Banking Management System.
 
 ## Project Structure
 
-
+'''
 Directory structure:
 └── parthamesh06-healthcare_final/
     ├── README.md
@@ -151,16 +151,16 @@ Directory structure:
             └── wrapper/
                 └── maven-wrapper.properties
 
-
+'''
 
 
 
 ## JDBC Implementation Notes
 
-- *Database Connection*: Uses Spring's JdbcTemplate to connect to MySQL.
-- *SQL Queries*: SQL queries will be used within repository interfaces for CRUD operations. Here’s an example of how to manage appointments with Spring Data JPA.
+- **Database Connection**: Uses Spring's 'JdbcTemplate' to connect to MySQL.
+- **SQL Queries**: SQL queries will be used within repository interfaces for CRUD operations. Here’s an example of how to manage appointments with Spring Data JPA.
 
-
+'''
 package com.HealthCare.repository;
 
 import com.HealthCare.entity.Appointment;
@@ -169,10 +169,10 @@ import org.springframework.data.jpa.repository.JpaRepository;
 public interface AppointmentRepository extends JpaRepository<Appointment, Long> {
 }
 
+'''
+- **CONTROLLER**: For Handling routes of the page
 
-- *CONTROLLER*: For Handling routes of the page
-
-
+...
 java
 package com.HealthCare.controller;
 
@@ -245,14 +245,14 @@ public class AppController {
         return "login";
     }
 }
-
+'''
 
 
 
 ### Frontend: HTML and CSS
 Each user type (Admin, Doctor, and Patient) will have separate HTML templates under src/main/resources/templates/ with corresponding styling in src/main/resources/static/.
 
-
+'''
 
 css
 
@@ -270,11 +270,12 @@ src/main/resources/
     │   └── scripts.js
     └── images/
 
-    
+'''    
 ## APPOINTMENT BOOKING (make_an_appointment.html)
 
 Displays a summary of users, appointments, and system settings.
 
+'''
 html
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
@@ -536,7 +537,7 @@ html
 
 </html>
 
-
+'''
 
 ## Testing
 Unit and integration tests are located in the src/test/ directory to ensure each functionality works correctly.
