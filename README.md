@@ -49,16 +49,16 @@ To set up this project locally, you’ll need:
 
 ### 1. Clone the Repository
 
-'''bash
-git clone https://github.com/Ronit-Raj98/HealthCare_guvi.git
+```bash
+git clone https://github.com/Parthamesh06/HEALTH_CARE_MANAGEMENT.git
 cd HEALTH_CARE_MANAGEMENT
-'''
+```
 
 ### 2. Configure the Database 
 
-Create a new database in MySQL, then update your 'application.properties' file to configure the database connection.
+Create a new database in MySQL, then update your `application.properties` file to configure the database connection.
 
-'''properties
+```properties
 # application.properties
 
 spring.application.name=HealthCare
@@ -75,32 +75,32 @@ spring.thymeleaf.suffix=.html
 spring.thymeleaf.cache=true
 
 server.port=8080
-'''
 
+```
 
 ### 3. Build the Project
 
 Use Maven to install dependencies and build the project:
 
-'''bash
+```bash
 mvn clean install
-'''
+```
 
 ### 4. Run the Application
 
 Run the application using Maven:
 
-'''bash
+```bash
 mvn spring-boot:run
-'''
+```
 
 ### 5. Access the Application
 
-Open your browser and go to 'http://localhost:8080' to access the Online Banking Management System.
+Open your browser and go to `http://localhost:8080` to access the Online Banking Management System.
 
 ## Project Structure
 
-'''
+```
 Directory structure:
 └── parthamesh06-healthcare_final/
     ├── README.md
@@ -151,16 +151,16 @@ Directory structure:
             └── wrapper/
                 └── maven-wrapper.properties
 
-'''
 
+```
 
 
 ## JDBC Implementation Notes
 
-- **Database Connection**: Uses Spring's 'JdbcTemplate' to connect to MySQL.
+- **Database Connection**: Uses Spring's `JdbcTemplate` to connect to MySQL.
 - **SQL Queries**: SQL queries will be used within repository interfaces for CRUD operations. Here’s an example of how to manage appointments with Spring Data JPA.
 
-'''
+```
 package com.HealthCare.repository;
 
 import com.HealthCare.entity.Appointment;
@@ -169,10 +169,10 @@ import org.springframework.data.jpa.repository.JpaRepository;
 public interface AppointmentRepository extends JpaRepository<Appointment, Long> {
 }
 
-'''
+```
 - **CONTROLLER**: For Handling routes of the page
 
-...
+```
 java
 package com.HealthCare.controller;
 
@@ -245,15 +245,15 @@ public class AppController {
         return "login";
     }
 }
-'''
 
+```
 
 
 ### Frontend: HTML and CSS
-Each user type (Admin, Doctor, and Patient) will have separate HTML templates under src/main/resources/templates/ with corresponding styling in src/main/resources/static/.
+Each user type (Admin, Doctor, and Patient) will have separate HTML templates under `src/main/resources/templates/` with corresponding styling in `src/main/resources/static/`.
 
-'''
 
+```
 css
 
 src/main/resources/
@@ -269,14 +269,13 @@ src/main/resources/
     ├── js/
     │   └── scripts.js
     └── images/
-
-'''    
+```
+    
 ## APPOINTMENT BOOKING (make_an_appointment.html)
 
 Displays a summary of users, appointments, and system settings.
 
-'''
-html
+```html
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 
@@ -537,7 +536,7 @@ html
 
 </html>
 
-'''
+```
 
 ## Testing
 Unit and integration tests are located in the src/test/ directory to ensure each functionality works correctly.
