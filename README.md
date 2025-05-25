@@ -50,7 +50,7 @@ To set up this project locally, you’ll need:
 ### 1. Clone the Repository
 
 '''bash
-git clone https://github.com/Ronit-raj98/HealthCare_guvi.git
+git clone https://github.com/Ronit-Raj98/HealthCare_guvi.git
 cd HEALTH_CARE_MANAGEMENT
 '''
 
