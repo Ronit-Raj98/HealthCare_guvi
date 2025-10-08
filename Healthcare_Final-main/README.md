@@ -50,7 +50,7 @@ To set up this project locally, you’ll need:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Parthamesh06/HEALTH_CARE_MANAGEMENT.git
+git clone https://github.com/Ronitraj06/HEALTH_CARE_MANAGEMENT.git
 cd HEALTH_CARE_MANAGEMENT
 ```
 
@@ -102,7 +102,7 @@ Open your browser and go to `http://localhost:8080` to access the Online Banking
 
 ```
 Directory structure:
-└── parthamesh06-healthcare_final/
+└── Ronitraj06-healthcare_final/
     ├── README.md
     └── HealthCare/
         ├── mvnw
