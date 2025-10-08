@@ -96,7 +96,7 @@ mvn spring-boot:run
 
 ### 5. Access the Application
 
-Open your browser and go to `http://localhost:8080` to access the Online Banking Management System.
+Open your browser and go to `http://localhost:8080` to access the Online HealthCare System.
 
 ## Project Structure
 
