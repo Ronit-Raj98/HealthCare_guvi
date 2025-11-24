@@ -64,7 +64,7 @@ Create a new database in MySQL, then update your `application.properties` file t
 spring.application.name=HealthCare
 spring.datasource.url=jdbc:mysql://localhost:3306/healthcare
 spring.datasource.username=root
-spring.datasource.password=Pratham@8969
+spring.datasource.password=Ronit_Raj98
 spring.jpa.hibernate.ddl-auto=update
 spring.resources.static-locations=classpath:/static/
 spring.security.content-security-policy=default-src 'self'; style-src 'self' 'unsafe-inline';
